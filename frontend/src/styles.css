@@ -1,0 +1,333 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1c303b;
+  background: #f4f3ed;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  border: 1px solid #14524f;
+  background: #14524f;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  background: #0c403d;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+button.secondary {
+  background: transparent;
+  color: #14524f;
+}
+button.danger {
+  background: transparent;
+  color: #a53232;
+  border-color: #c88383;
+}
+button.text-button {
+  background: none;
+  border: 0;
+  color: #14524f;
+  padding: 10px 0;
+  text-decoration: underline;
+  text-align: left;
+}
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #bd831d;
+  outline-offset: 3px;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px max(5vw, 20px);
+  border-bottom: 1px solid #d4dad4;
+  background: #fffefa;
+}
+.site-header strong {
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.site-header span {
+  font-size: 13px;
+}
+.site-header > div {
+  display: grid;
+  gap: 7px;
+}
+.site-header nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+main {
+  max-width: 1320px;
+  margin: auto;
+  padding: 38px 5vw 70px;
+}
+.intro {
+  padding: 8px 0 20px;
+  border-bottom: 1px solid #d4dad4;
+}
+.eyebrow {
+  color: #14706a;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: normal;
+  line-height: 1.04;
+  margin: 18px 0;
+}
+h2 {
+  font-size: 22px;
+  margin: 0 0 14px;
+}
+h3 {
+  font-size: 23px;
+  margin: 20px 0 7px;
+}
+p {
+  line-height: 1.55;
+}
+.intro > p:last-child {
+  color: #5c6a6c;
+  margin-bottom: 15px;
+}
+.store-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 32px;
+}
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 5px 0 12px;
+}
+.section-heading span {
+  font-size: 13px;
+  color: #617475;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.product {
+  padding: 25px;
+  background: #fffefa;
+  border: 1px solid #d4dad4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 300px;
+}
+.product-category {
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  color: #58766d;
+  border-bottom: 3px solid #dcbd74;
+  padding-bottom: 10px;
+}
+.product p {
+  color: #667574;
+  margin: 0 0 22px;
+}
+.price {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: normal;
+}
+.product small {
+  margin: 8px 0 20px;
+  color: #79847e;
+}
+.product > button {
+  margin-top: auto;
+  width: 100%;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+  margin-top: 12px;
+}
+.panel {
+  background: white;
+  border: 1px solid #d4dad4;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.panel > p {
+  font-size: 14px;
+  color: #62716e;
+}
+.panel > button {
+  width: 100%;
+}
+form {
+  display: grid;
+  gap: 16px;
+}
+label {
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #b8c6bf;
+  border-radius: 4px;
+  background: white;
+  color: #1c303b;
+}
+small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.panel > small {
+  display: block;
+  color: #62716e;
+  margin-top: 14px;
+}
+.notice-area {
+  min-height: 65px;
+  padding: 10px 0;
+}
+.notice {
+  padding: 12px 16px;
+  border-left: 4px solid #168377;
+  background: #e0eee6;
+  margin: 0;
+  font-size: 14px;
+}
+.notice.error {
+  border-left-color: #a63c32;
+  background: #f9e6df;
+}
+.cart-line {
+  display: grid;
+  gap: 7px;
+  border-bottom: 1px solid #e0e5df;
+  padding: 16px 0;
+}
+.cart-line > span {
+  font-size: 13px;
+  color: #61706a;
+}
+.cart-line .actions {
+  justify-content: space-between;
+}
+.cart-line select {
+  min-width: 80px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  font-size: 16px;
+}
+.admin-panel {
+  border-top: 4px solid #ba943f;
+}
+footer {
+  padding: 24px;
+  text-align: center;
+  background: #e8ece5;
+  font-size: 12px;
+  color: #61716a;
+}
+@media (max-width: 900px) {
+  .store-layout {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    max-width: none;
+  }
+  .intro {
+    padding-top: 0;
+  }
+  .site-header nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .site-header nav span {
+    width: 100%;
+    text-align: right;
+  }
+  .product {
+    min-height: 270px;
+  }
+}
+@media (max-width: 520px) {
+  main {
+    padding: 25px 20px 45px;
+  }
+  .site-header {
+    padding: 18px;
+    gap: 15px;
+  }
+  .site-header strong {
+    font-size: 18px;
+  }
+  .site-header > div > span {
+    display: none;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .product {
+    min-height: 250px;
+  }
+  .site-header nav {
+    gap: 8px;
+  }
+  .site-header nav span {
+    font-size: 11px;
+  }
+  .site-header button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+
+.admin-tabs { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 22px; }
+.vendor-list { min-width: 0; }
+.table-scroll { overflow-x: auto; }
+.vendor-list table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+.vendor-list th { color: #617475; font-weight: 600; font-size: 12px; padding: 14px 12px; border-bottom: 1px solid #d4dad4; }
+.vendor-list td { padding: 20px 12px; border-bottom: 1px solid #e4e8e2; overflow-wrap: anywhere; }
+.vendor-list td small { display: block; margin-top: 8px; color: #617475; }
+.vendor-actions { display: flex; gap: 8px; }
+.vendor-actions button { padding: 8px 10px; font-size: 12px; }
+@media (max-width: 520px) {
+  .vendor-list table { min-width: 500px; }
+  .vendor-list { padding: 18px; }
+}
