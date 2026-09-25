@@ -1,6 +1,8 @@
 name: CI practice
 
 on:
+  push:
+    branches: [master]
   workflow_dispatch:
 
 permissions:
